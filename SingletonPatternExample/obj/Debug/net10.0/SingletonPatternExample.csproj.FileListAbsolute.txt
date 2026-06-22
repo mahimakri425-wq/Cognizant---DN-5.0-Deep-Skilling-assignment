@@ -1,0 +1,14 @@
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\bin\Debug\net10.0\SingletonPatternExample.exe
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\bin\Debug\net10.0\SingletonPatternExample.deps.json
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\bin\Debug\net10.0\SingletonPatternExample.runtimeconfig.json
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\bin\Debug\net10.0\SingletonPatternExample.dll
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\bin\Debug\net10.0\SingletonPatternExample.pdb
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\obj\Debug\net10.0\SingletonPatternExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\obj\Debug\net10.0\SingletonPatternExample.AssemblyInfoInputs.cache
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\obj\Debug\net10.0\SingletonPatternExample.AssemblyInfo.cs
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\obj\Debug\net10.0\SingletonPatternExample.csproj.CoreCompileInputs.cache
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\obj\Debug\net10.0\SingletonPatternExample.dll
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\obj\Debug\net10.0\refint\SingletonPatternExample.dll
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\obj\Debug\net10.0\SingletonPatternExample.pdb
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\obj\Debug\net10.0\SingletonPatternExample.genruntimeconfig.cache
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\SingletonPatternExample\obj\Debug\net10.0\ref\SingletonPatternExample.dll
