@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\SingletonPatternExample\\SingletonPatternExample.csproj": {}
+    "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\DesignPatterns\\SingletonPatternExample\\SingletonPatternExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\SingletonPatternExample\\SingletonPatternExample.csproj": {
+    "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\DesignPatterns\\SingletonPatternExample\\SingletonPatternExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\SingletonPatternExample\\SingletonPatternExample.csproj",
+        "projectUniqueName": "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\DesignPatterns\\SingletonPatternExample\\SingletonPatternExample.csproj",
         "projectName": "SingletonPatternExample",
-        "projectPath": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\SingletonPatternExample\\SingletonPatternExample.csproj",
+        "projectPath": "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\DesignPatterns\\SingletonPatternExample\\SingletonPatternExample.csproj",
         "packagesPath": "C:\\Users\\mahim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\SingletonPatternExample\\obj\\",
+        "outputPath": "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\DesignPatterns\\SingletonPatternExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mahim\\AppData\\Roaming\\NuGet\\NuGet.Config"
