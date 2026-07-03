@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CalcLibrary\\CalcLibrary\\CalcLibrary.csproj": {}
+    "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CalcLibrary\\CalcLibrary\\CalcLibrary.csproj": {}
   },
   "projects": {
-    "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CalcLibrary\\CalcLibrary\\CalcLibrary.csproj": {
+    "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CalcLibrary\\CalcLibrary\\CalcLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CalcLibrary\\CalcLibrary\\CalcLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CalcLibrary\\CalcLibrary\\CalcLibrary.csproj",
         "projectName": "CalcLibrary",
-        "projectPath": "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CalcLibrary\\CalcLibrary\\CalcLibrary.csproj",
+        "projectPath": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CalcLibrary\\CalcLibrary\\CalcLibrary.csproj",
         "packagesPath": "C:\\Users\\mahim\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CalcLibrary\\CalcLibrary\\obj\\",
+        "outputPath": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CalcLibrary\\CalcLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mahim\\AppData\\Roaming\\NuGet\\NuGet.Config"
