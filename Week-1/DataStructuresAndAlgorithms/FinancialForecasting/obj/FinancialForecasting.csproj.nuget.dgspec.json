@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-DEEPSKILLING-ASSESMENT\\Week-1\\DataStructuresAndAlgorithms\\FinancialForecasting\\FinancialForecasting.csproj": {}
+    "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\DataStructuresAndAlgorithms\\FinancialForecasting\\FinancialForecasting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-DEEPSKILLING-ASSESMENT\\Week-1\\DataStructuresAndAlgorithms\\FinancialForecasting\\FinancialForecasting.csproj": {
+    "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\DataStructuresAndAlgorithms\\FinancialForecasting\\FinancialForecasting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-DEEPSKILLING-ASSESMENT\\Week-1\\DataStructuresAndAlgorithms\\FinancialForecasting\\FinancialForecasting.csproj",
+        "projectUniqueName": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\DataStructuresAndAlgorithms\\FinancialForecasting\\FinancialForecasting.csproj",
         "projectName": "FinancialForecasting",
-        "projectPath": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-DEEPSKILLING-ASSESMENT\\Week-1\\DataStructuresAndAlgorithms\\FinancialForecasting\\FinancialForecasting.csproj",
+        "projectPath": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\DataStructuresAndAlgorithms\\FinancialForecasting\\FinancialForecasting.csproj",
         "packagesPath": "C:\\Users\\mahim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-DEEPSKILLING-ASSESMENT\\Week-1\\DataStructuresAndAlgorithms\\FinancialForecasting\\obj\\",
+        "outputPath": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\DataStructuresAndAlgorithms\\FinancialForecasting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mahim\\AppData\\Roaming\\NuGet\\NuGet.Config"
