@@ -32,3 +32,6 @@ C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\Week-3\FirstWebApi\
 C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\Week-3\FirstWebApi\obj\Debug\net10.0\FirstWebApi.pdb
 C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\Week-3\FirstWebApi\obj\Debug\net10.0\FirstWebApi.genruntimeconfig.cache
 C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\Week-3\FirstWebApi\obj\Debug\net10.0\ref\FirstWebApi.dll
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\Week-3\FirstWebApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\Week-3\FirstWebApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\mahim\OneDrive\Desktop\DN5_0-Deepskilling-Assesment\Week-3\FirstWebApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
