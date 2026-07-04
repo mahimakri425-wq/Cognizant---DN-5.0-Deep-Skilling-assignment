@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-2\\RetailInventory\\RetailInventory.csproj": {}
+    "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-2\\RetailInventory\\RetailInventory.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-2\\RetailInventory\\RetailInventory.csproj": {
+    "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-2\\RetailInventory\\RetailInventory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-2\\RetailInventory\\RetailInventory.csproj",
+        "projectUniqueName": "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-2\\RetailInventory\\RetailInventory.csproj",
         "projectName": "RetailInventory",
-        "projectPath": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-2\\RetailInventory\\RetailInventory.csproj",
+        "projectPath": "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-2\\RetailInventory\\RetailInventory.csproj",
         "packagesPath": "C:\\Users\\mahim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-2\\RetailInventory\\obj\\",
+        "outputPath": "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-2\\RetailInventory\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mahim\\AppData\\Roaming\\NuGet\\NuGet.Config"

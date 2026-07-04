@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "jc4W6a+VuYc=",
+  "success": true,
+  "projectFilePath": "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CustomerCommLib\\CustomerCommLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mahim\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.28\\microsoft.netcore.app.ref.8.0.28.nupkg.sha512",
+    "C:\\Users\\mahim\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.28\\microsoft.windowsdesktop.app.ref.8.0.28.nupkg.sha512",
+    "C:\\Users\\mahim\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.28\\microsoft.aspnetcore.app.ref.8.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}
