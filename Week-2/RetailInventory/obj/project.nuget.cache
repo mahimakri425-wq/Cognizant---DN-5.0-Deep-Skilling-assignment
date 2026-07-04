@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nf8avbNbU8I=",
+  "dgSpecHash": "PTw6lsAplKE=",
   "success": true,
-  "projectFilePath": "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-2\\RetailInventory\\RetailInventory.csproj",
+  "projectFilePath": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-2\\RetailInventory\\RetailInventory.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mahim\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\mahim\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
