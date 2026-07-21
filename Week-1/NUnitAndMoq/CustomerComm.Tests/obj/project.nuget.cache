@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Mf4nNUdPqRc=",
+  "dgSpecHash": "RveQ96D8mg8=",
   "success": true,
-  "projectFilePath": "c:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CustomerComm.Tests\\CustomerComm.Tests.csproj",
+  "projectFilePath": "C:\\Users\\mahim\\OneDrive\\Desktop\\DN5_0-Deepskilling-Assesment\\Week-1\\NUnitAndMoq\\CustomerComm.Tests\\CustomerComm.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mahim\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\mahim\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
@@ -21,7 +21,13 @@
     "C:\\Users\\mahim\\.nuget\\packages\\nunit\\4.3.2\\nunit.4.3.2.nupkg.sha512",
     "C:\\Users\\mahim\\.nuget\\packages\\nunit.analyzers\\4.7.0\\nunit.analyzers.4.7.0.nupkg.sha512",
     "C:\\Users\\mahim\\.nuget\\packages\\nunit3testadapter\\5.0.0\\nunit3testadapter.5.0.0.nupkg.sha512",
-    "C:\\Users\\mahim\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    "C:\\Users\\mahim\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
+    "C:\\Users\\mahim\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "C:\\Users\\mahim\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+    "C:\\Users\\mahim\\.nuget\\packages\\system.reflection.metadata\\8.0.0\\system.reflection.metadata.8.0.0.nupkg.sha512",
+    "C:\\Users\\mahim\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.28\\microsoft.netcore.app.ref.8.0.28.nupkg.sha512",
+    "C:\\Users\\mahim\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.28\\microsoft.windowsdesktop.app.ref.8.0.28.nupkg.sha512",
+    "C:\\Users\\mahim\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.28\\microsoft.aspnetcore.app.ref.8.0.28.nupkg.sha512"
   ],
   "logs": []
 }
