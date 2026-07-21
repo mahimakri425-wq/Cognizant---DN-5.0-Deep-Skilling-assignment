@@ -1,5 +1,9 @@
-<div class="course-card">
-  <h2>{{ course.name }}</h2>
+<div
+  class="course-card"
+  [ngClass]="cardClasses"
+  [ngStyle]="{ 'border-left-color': borderColor }">
+
+  <h2>{{ course.name | uppercase }}</h2>
 
   <p>
     <strong>Course ID:</strong>
@@ -13,10 +17,67 @@
 
   <p>
     <strong>Credits:</strong>
-    {{ course.credits }}
+    {{ course.credits | creditLabel }}
   </p>
 
-  <button type="button" (click)="requestEnrollment()">
+  <p>
+    <strong>Instructor:</strong>
+    {{ course.instructor }}
+  </p>
+
+  <div [ngSwitch]="course.gradeStatus">
+
+    <span
+      *ngSwitchCase="'passed'"
+      class="badge badge--passed">
+      Passed
+    </span>
+
+    <span
+      *ngSwitchCase="'failed'"
+      class="badge badge--failed">
+      Failed
+    </span>
+
+    <span
+      *ngSwitchDefault
+      class="badge badge--pending">
+      Pending
+    </span>
+
+  </div>
+
+  <div *ngIf="isExpanded" class="details">
+
+    <p>
+      <strong>Course Fee:</strong>
+      {{ course.fee | currency:'INR' }}
+    </p>
+
+    <p>
+      <strong>Start Date:</strong>
+      {{ course.startDate | date:'dd/MM/yyyy' }}
+    </p>
+
+    <p>
+      <strong>Fee Value:</strong>
+      {{ course.fee | number:'1.2-2' }}
+    </p>
+
+  </div>
+
+  <br>
+
+  <button
+    type="button"
+    (click)="requestEnrollment()">
     Enroll
   </button>
+
+  <button
+    type="button"
+    (click)="toggleDetails()">
+    {{ isExpanded ? 'Hide Details' : 'Show Details' }}
+  </button>
+
 </div>
