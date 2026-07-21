@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnDestroy,
+  OnInit
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -8,19 +12,37 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
-export class Home implements OnInit {
+export class Home implements OnInit, OnDestroy {
 
-  studentName = 'Mahima Kumari';
-  department = 'ECE';
-  cgpa = 8.5;
-  isEnrolled = true;
-  courseName = '';
+  portalName = 'Student Course Portal';
+
+  isPortalActive = true;
+
+  message = '';
+
+  searchTerm = '';
+
+  availableCourses = 12;
+
+  // Property binding is one-way:
+  // component data moves from the component to the DOM.
+
+  // ngModel is two-way:
+  // data moves between the component and the input field.
 
   ngOnInit(): void {
-    console.log('Home Component Loaded Successfully!');
+    this.availableCourses = 12;
+
+    console.log(
+      'HomeComponent initialised — courses loaded'
+    );
   }
 
-  showMessage() {
-    alert('Welcome to Student Course Portal!');
+  onEnrollClick(): void {
+    this.message = 'Enrollment opened!';
+  }
+
+  ngOnDestroy(): void {
+    console.log('HomeComponent destroyed');
   }
 }

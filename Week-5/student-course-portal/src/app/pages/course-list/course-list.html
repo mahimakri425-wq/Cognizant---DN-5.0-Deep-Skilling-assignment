@@ -1,1 +1,12 @@
-<p>course-list works!</p>
+<h1>Course List</h1>
+
+<app-course-card
+  *ngFor="let course of courses"
+  [course]="course"
+  (enrollRequested)="onEnroll($event)">
+</app-course-card>
+
+<p *ngIf="selectedCourseId !== null">
+  <strong>Selected course ID:</strong>
+  {{ selectedCourseId }}
+</p>
