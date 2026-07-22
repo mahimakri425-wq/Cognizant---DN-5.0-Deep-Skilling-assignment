@@ -4,6 +4,8 @@ import { Home } from './pages/home/home';
 import { CourseList } from './pages/course-list/course-list';
 import { EnrollmentForm } from './pages/enrollment-form/enrollment-form';
 
+import { ReactiveEnrollmentForm } from './pages/reactive-enrollment-form/reactive-enrollment-form';
+
 export const routes: Routes = [
   {
     path: '',
@@ -16,5 +18,9 @@ export const routes: Routes = [
   {
     path: 'enroll',
     component: EnrollmentForm
-  }
+  },
+  {
+  path: 'enroll-reactive',
+  component: ReactiveEnrollmentForm
+}
 ];

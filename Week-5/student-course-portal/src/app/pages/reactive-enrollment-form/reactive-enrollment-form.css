@@ -1,0 +1,90 @@
+.form-container {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 24px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+input.ng-valid.ng-touched,
+select.ng-valid.ng-touched {
+  border-color: green;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.info {
+  color: #555555;
+  margin-top: 5px;
+}
+
+.additional-course {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+}
+
+.additional-course input {
+  margin-right: 10px;
+}
+
+.button-group {
+  margin-top: 22px;
+}
+
+button {
+  padding: 10px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.success {
+  margin-top: 20px;
+  padding: 12px;
+  color: green;
+  background-color: #e8f5e9;
+  border: 1px solid green;
+  border-radius: 5px;
+  font-weight: bold;
+}
