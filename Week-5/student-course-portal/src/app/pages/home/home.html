@@ -1,28 +1,20 @@
-<h1>{{ portalName }}</h1>
+<section class="home-page">
 
-<p>Courses Available: {{ availableCourses }}</p>
+  <h1>{{ portalName }}</h1>
 
-<p>
-  Enrollment Status:
-  {{ isPortalActive ? 'Active' : 'Inactive' }}
-</p>
+  <div class="stat-card">
+    <h2>{{ courseCount }}</h2>
+    <p>Available Courses</p>
+  </div>
 
-<button
-  type="button"
-  [disabled]="!isPortalActive"
-  (click)="onEnrollClick()">
-  Enroll Now
-</button>
+  <app-course-summary-widget
+    (courseAdded)="updateCourseCount()">
+  </app-course-summary-widget>
 
-<p>{{ message }}</p>
+  <h2>Notification Instance 1</h2>
+  <app-notification></app-notification>
 
-<hr>
+  <h2>Notification Instance 2</h2>
+  <app-notification></app-notification>
 
-<h2>Course Search</h2>
-
-<input
-  type="text"
-  [(ngModel)]="searchTerm"
-  placeholder="Enter Course Name">
-
-<p>You entered: {{ searchTerm }}</p>
+</section>

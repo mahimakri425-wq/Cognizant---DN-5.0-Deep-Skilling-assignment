@@ -33,6 +33,13 @@ export class EnrollmentForm {
 
   onReset(form: NgForm): void {
     form.resetForm();
+
+    this.studentName = '';
+    this.studentEmail = '';
+    this.courseId = null;
+    this.preferredSemester = '';
+    this.agreeToTerms = false;
+
     this.submitted = false;
   }
 }

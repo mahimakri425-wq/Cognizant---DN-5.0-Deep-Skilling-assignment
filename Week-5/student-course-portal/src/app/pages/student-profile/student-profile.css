@@ -1,0 +1,15 @@
+.student-profile {
+  padding: 24px;
+}
+
+.enrolled-course-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.enrolled-course-card {
+  padding: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}

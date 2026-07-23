@@ -1,1 +1,44 @@
-<p>student-profile works!</p>
+<section class="student-profile">
+
+  <h2>Student Profile</h2>
+
+  <p>
+    <strong>Name:</strong>
+    {{ studentName }}
+  </p>
+
+  <h3>My Enrolled Courses</h3>
+
+  @if (enrolledCourses.length > 0) {
+
+    <div class="enrolled-course-list">
+
+      @for (course of enrolledCourses; track course.id) {
+
+        <div class="enrolled-course-card">
+
+          <h4>{{ course.name }}</h4>
+
+          <p>
+            <strong>Code:</strong>
+            {{ course.code }}
+          </p>
+
+          <p>
+            <strong>Credits:</strong>
+            {{ course.credits }}
+          </p>
+
+        </div>
+
+      }
+
+    </div>
+
+  } @else {
+
+    <p>You have not enrolled in any course.</p>
+
+  }
+
+</section>

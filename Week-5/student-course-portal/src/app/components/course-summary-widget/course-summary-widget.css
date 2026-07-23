@@ -1,0 +1,11 @@
+.summary-widget {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+.summary-widget button {
+  padding: 9px 16px;
+  cursor: pointer;
+}

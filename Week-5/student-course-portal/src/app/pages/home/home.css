@@ -1,0 +1,17 @@
+.home-page {
+  padding: 24px;
+}
+
+.stat-card {
+  width: 220px;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat-card h2 {
+  margin: 0;
+  font-size: 32px;
+}
