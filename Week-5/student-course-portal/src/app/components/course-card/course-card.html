@@ -17,7 +17,9 @@
     {{ course.gradeStatus | titlecase }}
   </p>
 
-  <button type="button" (click)="toggleEnrollment()">
+  <button
+  type="button"
+  (click)="$event.stopPropagation(); toggleEnrollment()">
     {{ isEnrolled() ? 'Unenroll' : 'Enroll' }}
   </button>
 

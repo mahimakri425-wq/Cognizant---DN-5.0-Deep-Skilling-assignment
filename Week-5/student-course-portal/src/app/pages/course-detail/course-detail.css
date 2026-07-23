@@ -1,0 +1,11 @@
+.course-detail-page {
+  padding: 24px;
+}
+
+.course-detail-card {
+  max-width: 500px;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}

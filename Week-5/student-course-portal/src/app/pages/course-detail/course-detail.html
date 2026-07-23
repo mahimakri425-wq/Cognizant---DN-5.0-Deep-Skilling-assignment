@@ -1,0 +1,45 @@
+<section class="course-detail-page">
+
+  @if (course) {
+
+    <h2>Course Details</h2>
+
+    <div class="course-detail-card">
+
+      <h3>{{ course.name }}</h3>
+
+      <p>
+        <strong>Course ID:</strong>
+        {{ course.id }}
+      </p>
+
+      <p>
+        <strong>Code:</strong>
+        {{ course.code }}
+      </p>
+
+      <p>
+        <strong>Credits:</strong>
+        {{ course.credits }}
+      </p>
+
+      <p>
+        <strong>Status:</strong>
+        {{ course.gradeStatus }}
+      </p>
+
+    </div>
+
+  } @else {
+
+    <h2>Course not found</h2>
+
+    <p>No course exists with ID {{ courseId }}.</p>
+
+  }
+
+  <a routerLink="/courses">
+    Back to Courses
+  </a>
+
+</section>

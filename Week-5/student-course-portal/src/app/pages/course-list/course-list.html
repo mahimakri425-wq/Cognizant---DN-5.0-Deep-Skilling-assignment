@@ -2,25 +2,55 @@
 
   <h2>Available Courses</h2>
 
+  <div class="search-row">
+
+    <input
+      type="text"
+      [(ngModel)]="searchTerm"
+      placeholder="Search courses">
+
+    <button
+      type="button"
+      (click)="searchCourses()">
+      Search
+    </button>
+
+  </div>
+
   @if (isLoading()) {
 
     <p>Loading courses...</p>
 
   } @else {
 
-    <p>Total courses: {{ courses.length }}</p>
+    <p>
+      Total courses:
+      {{ filteredCourses.length }}
+    </p>
 
     <div class="course-grid">
 
-      @for (course of courses; track course.id) {
+      @for (
+        course of filteredCourses;
+        track course.id
+      ) {
 
-        <app-course-card
-          [course]="course">
-        </app-course-card>
+        <div
+          class="clickable-course"
+          tabindex="0"
+          role="button"
+          (click)="openCourse(course.id)"
+          (keydown.enter)="openCourse(course.id)">
+
+          <app-course-card
+            [course]="course">
+          </app-course-card>
+
+        </div>
 
       } @empty {
 
-        <p>No courses are available.</p>
+        <p>No matching courses found.</p>
 
       }
 
