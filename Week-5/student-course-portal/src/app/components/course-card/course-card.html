@@ -18,12 +18,20 @@
   </p>
 
   <button
-  type="button"
-  (click)="$event.stopPropagation(); toggleEnrollment()">
-    {{ isEnrolled() ? 'Unenroll' : 'Enroll' }}
+    type="button"
+    (click)="
+      $event.stopPropagation();
+      toggleEnrollment()
+    "
+  >
+    {{
+      (isEnrolled$ | async)
+        ? 'Unenroll'
+        : 'Enroll'
+    }}
   </button>
 
-  @if (isEnrolled()) {
+  @if (isEnrolled$ | async) {
     <p class="enrolled-message">
       You are enrolled in this course.
     </p>

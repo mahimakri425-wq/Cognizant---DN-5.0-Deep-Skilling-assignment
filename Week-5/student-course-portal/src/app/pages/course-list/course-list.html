@@ -3,46 +3,58 @@
 <div>
   <input
     type="text"
-    [(ngModel)]="searchText"
+    [(ngModel)]="searchTerm"
     placeholder="Search courses"
     (keyup.enter)="searchCourses()"
   />
 
-  <button type="button" (click)="searchCourses()">
+  <button
+    type="button"
+    (click)="searchCourses()"
+  >
     Search
   </button>
 </div>
 
-<p *ngIf="isLoading">
-  Loading courses...
-</p>
+@if (loading$ | async) {
+  <p>Loading courses from NgRx Store...</p>
+}
 
-<div *ngIf="!isLoading && errorMessage">
-  <p style="color: red;">
-    {{ errorMessage }}
-  </p>
+@if (error$ | async; as errorMessage) {
+  <div>
+    <p style="color: red;">
+      {{ errorMessage }}
+    </p>
 
-  <button type="button" (click)="loadCourses()">
-    Retry
-  </button>
-</div>
-
-<div *ngIf="!isLoading && !errorMessage">
-
-  <p>Total Courses: {{ filteredCourses.length }}</p>
-
-  <p *ngIf="filteredCourses.length === 0">
-    No courses found.
-  </p>
-
-  <div *ngFor="let course of filteredCourses">
-    <h3>{{ course.name }}</h3>
-
-    <p><strong>Code:</strong> {{ course.code }}</p>
-    <p><strong>Credits:</strong> {{ course.credits }}</p>
-    <p><strong>Status:</strong> {{ course.gradeStatus }}</p>
-
-    <hr />
+    <button
+      type="button"
+      (click)="ngOnInit()"
+    >
+      Retry
+    </button>
   </div>
+}
 
-</div>
+@if (filteredCourses$ | async; as courses) {
+
+  @if (!(loading$ | async) && courses.length === 0) {
+    <p>No courses found.</p>
+  }
+
+  <p>
+    Total Courses: {{ courses.length }}
+  </p>
+
+  <div class="course-grid">
+    @for (course of courses; track course.id) {
+      <div
+        class="course-item"
+        (click)="openCourse(course.id)"
+      >
+        <app-course-card
+          [course]="course">
+        </app-course-card>
+      </div>
+    }
+  </div>
+}
