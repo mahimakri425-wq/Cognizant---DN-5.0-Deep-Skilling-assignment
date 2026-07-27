@@ -1,61 +1,48 @@
-<section class="course-list-page">
+<h2>Available Courses</h2>
 
-  <h2>Available Courses</h2>
+<div>
+  <input
+    type="text"
+    [(ngModel)]="searchText"
+    placeholder="Search courses"
+    (keyup.enter)="searchCourses()"
+  />
 
-  <div class="search-row">
+  <button type="button" (click)="searchCourses()">
+    Search
+  </button>
+</div>
 
-    <input
-      type="text"
-      [(ngModel)]="searchTerm"
-      placeholder="Search courses">
+<p *ngIf="isLoading">
+  Loading courses...
+</p>
 
-    <button
-      type="button"
-      (click)="searchCourses()">
-      Search
-    </button>
+<div *ngIf="!isLoading && errorMessage">
+  <p style="color: red;">
+    {{ errorMessage }}
+  </p>
 
+  <button type="button" (click)="loadCourses()">
+    Retry
+  </button>
+</div>
+
+<div *ngIf="!isLoading && !errorMessage">
+
+  <p>Total Courses: {{ filteredCourses.length }}</p>
+
+  <p *ngIf="filteredCourses.length === 0">
+    No courses found.
+  </p>
+
+  <div *ngFor="let course of filteredCourses">
+    <h3>{{ course.name }}</h3>
+
+    <p><strong>Code:</strong> {{ course.code }}</p>
+    <p><strong>Credits:</strong> {{ course.credits }}</p>
+    <p><strong>Status:</strong> {{ course.gradeStatus }}</p>
+
+    <hr />
   </div>
 
-  @if (isLoading()) {
-
-    <p>Loading courses...</p>
-
-  } @else {
-
-    <p>
-      Total courses:
-      {{ filteredCourses.length }}
-    </p>
-
-    <div class="course-grid">
-
-      @for (
-        course of filteredCourses;
-        track course.id
-      ) {
-
-        <div
-          class="clickable-course"
-          tabindex="0"
-          role="button"
-          (click)="openCourse(course.id)"
-          (keydown.enter)="openCourse(course.id)">
-
-          <app-course-card
-            [course]="course">
-          </app-course-card>
-
-        </div>
-
-      } @empty {
-
-        <p>No matching courses found.</p>
-
-      }
-
-    </div>
-
-  }
-
-</section>
+</div>

@@ -1,0 +1,76 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Angular Development",
+      "code": "ANG101",
+      "credits": 4,
+      "gradeStatus": "passed"
+    },
+    {
+      "id": 2,
+      "name": "ASP.NET Core",
+      "code": "NET201",
+      "credits": 4,
+      "gradeStatus": "pending"
+    },
+    {
+      "id": 3,
+      "name": "Database Management",
+      "code": "DB301",
+      "credits": 3,
+      "gradeStatus": "passed"
+    },
+    {
+      "id": 4,
+      "name": "Cloud Computing",
+      "code": "CC401",
+      "credits": 3,
+      "gradeStatus": "failed"
+    },
+    {
+      "id": 5,
+      "name": "Software Testing",
+      "code": "ST501",
+      "credits": 2,
+      "gradeStatus": "pending"
+    }
+  ],
+ "students": [
+  {
+    "id": 1,
+    "name": "Mahima Kumari",
+    "email": "mahima@example.com",
+    "courseId": 1
+  },
+  {
+    "id": 2,
+    "name": "Aman Kumar",
+    "email": "aman@example.com",
+    "courseId": 1
+  },
+  {
+    "id": 3,
+    "name": "Priya Singh",
+    "email": "priya@example.com",
+    "courseId": 2
+  }
+],
+"enrollments": [
+  {
+    "id": 1,
+    "studentId": 1,
+    "courseId": 1
+  },
+  {
+    "id": 2,
+    "studentId": 2,
+    "courseId": 1
+  },
+  {
+    "id": 3,
+    "studentId": 3,
+    "courseId": 2
+  }
+]
+}

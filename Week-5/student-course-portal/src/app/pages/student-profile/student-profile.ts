@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Course } from '../../models/course.model';
 import { EnrollmentService } from '../../services/enrollment';
@@ -10,13 +10,29 @@ import { EnrollmentService } from '../../services/enrollment';
   templateUrl: './student-profile.html',
   styleUrl: './student-profile.css'
 })
-export class StudentProfile {
+export class StudentProfile implements OnInit {
 
   studentName = 'Mahima Kumari';
 
-  constructor(private enrollmentService: EnrollmentService) {}
+  enrolledCourses: Course[] = [];
 
-  get enrolledCourses(): Course[] {
-    return this.enrollmentService.getEnrolledCourses();
+  constructor(
+    private enrollmentService: EnrollmentService
+  ) {}
+
+  ngOnInit(): void {
+    this.enrollmentService
+      .getEnrolledCourses()
+      .subscribe({
+        next: courses => {
+          this.enrolledCourses = courses;
+        },
+        error: error => {
+          console.error(
+            'Unable to load enrolled courses:',
+            error
+          );
+        }
+      });
   }
 }

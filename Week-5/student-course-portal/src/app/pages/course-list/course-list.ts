@@ -1,81 +1,65 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
 
-import { CourseCard } from '../../components/course-card/course-card';
-import { Course } from '../../models/course.model';
 import { CourseService } from '../../services/course';
+import { Course } from '../../models/course.model';
 
 @Component({
   selector: 'app-course-list',
   standalone: true,
-  imports: [
-    FormsModule,
-    CourseCard
-  ],
+  imports: [CommonModule, FormsModule],
   templateUrl: './course-list.html',
   styleUrl: './course-list.css'
 })
 export class CourseList implements OnInit {
 
-  isLoading = signal(true);
-
   courses: Course[] = [];
   filteredCourses: Course[] = [];
 
-  searchTerm = '';
+  searchText = '';
+  isLoading = false;
+  errorMessage = '';
 
-  constructor(
-    private courseService: CourseService,
-    private router: Router,
-    private route: ActivatedRoute
-  ) {}
+  constructor(private courseService: CourseService) {}
 
   ngOnInit(): void {
-    this.courses = this.courseService.getCourses();
+    this.loadCourses();
+  }
 
-    this.searchTerm =
-      this.route.snapshot.queryParamMap.get('search') ?? '';
+  loadCourses(): void {
+    this.isLoading = true;
+    this.errorMessage = '';
 
-    this.filterCourses();
+    this.courseService.getCourses().subscribe({
+      next: (courses: Course[]) => {
+        this.courses = courses;
+        this.filteredCourses = courses;
+        this.isLoading = false;
+      },
 
-    setTimeout(() => {
-      this.isLoading.set(false);
-    }, 1000);
+      error: (error: Error) => {
+        console.error('Unable to load courses:', error);
+
+        this.errorMessage =
+          error.message || 'Failed to load courses. Please try again.';
+
+        this.isLoading = false;
+      }
+    });
   }
 
   searchCourses(): void {
-    this.router.navigate(
-      ['/courses'],
-      {
-        queryParams: {
-          search: this.searchTerm || null
-        }
-      }
-    );
+    const searchValue = this.searchText.trim().toLowerCase();
 
-    this.filterCourses();
-  }
-
-  filterCourses(): void {
-    const value = this.searchTerm
-      .trim()
-      .toLowerCase();
-
-    if (!value) {
+    if (!searchValue) {
       this.filteredCourses = this.courses;
       return;
     }
 
     this.filteredCourses = this.courses.filter(course =>
-      course.name.toLowerCase().includes(value) ||
-      course.code.toLowerCase().includes(value)
-    );
-  }
-
-  openCourse(courseId: number): void {
-    this.router.navigate(
-      ['/courses', courseId]
+      course.name.toLowerCase().includes(searchValue) ||
+      course.code.toLowerCase().includes(searchValue)
     );
   }
 }

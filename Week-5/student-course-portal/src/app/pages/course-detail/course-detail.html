@@ -1,45 +1,58 @@
-<section class="course-detail-page">
+<p>
+  <a routerLink="/courses">← Back to Courses</a>
+</p>
 
-  @if (course) {
+@if (isLoading) {
+  <p>Loading course details...</p>
+}
 
-    <h2>Course Details</h2>
+@if (errorMessage) {
+  <p style="color: red;">
+    {{ errorMessage }}
+  </p>
+}
 
-    <div class="course-detail-card">
+@if (!isLoading && course) {
+  <section>
+    <h2>{{ course.name }}</h2>
 
-      <h3>{{ course.name }}</h3>
+    <p>
+      <strong>Course code:</strong>
+      {{ course.code }}
+    </p>
 
-      <p>
-        <strong>Course ID:</strong>
-        {{ course.id }}
-      </p>
+    <p>
+      <strong>Credits:</strong>
+      {{ course.credits }}
+    </p>
 
-      <p>
-        <strong>Code:</strong>
-        {{ course.code }}
-      </p>
+    <p>
+      <strong>Grade status:</strong>
+      {{ course.gradeStatus }}
+    </p>
 
-      <p>
-        <strong>Credits:</strong>
-        {{ course.credits }}
-      </p>
+    <hr />
 
-      <p>
-        <strong>Status:</strong>
-        {{ course.gradeStatus }}
-      </p>
+    <h3>Enrolled Students</h3>
 
-    </div>
+    @if (students.length === 0) {
+      <p>No students are enrolled in this course.</p>
+    }
 
-  } @else {
+    @for (student of students; track student.id) {
+      <div>
+        <p>
+          <strong>Name:</strong>
+          {{ student.name }}
+        </p>
 
-    <h2>Course not found</h2>
+        <p>
+          <strong>Email:</strong>
+          {{ student.email }}
+        </p>
 
-    <p>No course exists with ID {{ courseId }}.</p>
-
-  }
-
-  <a routerLink="/courses">
-    Back to Courses
-  </a>
-
-</section>
+        <hr />
+      </div>
+    }
+  </section>
+}

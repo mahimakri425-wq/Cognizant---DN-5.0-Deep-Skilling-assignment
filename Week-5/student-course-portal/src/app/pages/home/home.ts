@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 
-import { CourseService } from '../../services/course';
 import { CourseSummaryWidget } from '../../components/course-summary-widget/course-summary-widget';
 import { Notification } from '../../components/notification/notification';
+import { CourseService } from '../../services/course';
 
 @Component({
   selector: 'app-home',
@@ -18,15 +18,24 @@ export class Home implements OnInit {
 
   portalName = 'Student Course Portal';
 
-  courseCount = 0;
+  courseCount = signal(0);
 
   constructor(private courseService: CourseService) {}
 
   ngOnInit(): void {
-    this.updateCourseCount();
+    this.loadCourseCount();
   }
 
-  updateCourseCount(): void {
-    this.courseCount = this.courseService.getCourses().length;
+  loadCourseCount(): void {
+    this.courseService.getCourses().subscribe({
+      next: (courses) => {
+        console.log('Home courses:', courses);
+        this.courseCount.set(courses.length);
+      },
+      error: (error) => {
+        console.error('Home count error:', error);
+        this.courseCount.set(0);
+      }
+    });
   }
 }

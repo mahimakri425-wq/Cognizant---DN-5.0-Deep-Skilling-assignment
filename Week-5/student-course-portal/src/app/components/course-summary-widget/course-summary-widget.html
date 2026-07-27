@@ -1,16 +1,11 @@
 <div class="summary-widget">
-
   <h3>Course Summary</h3>
 
-  <p>
-    Total Courses:
-    <strong>{{ totalCourses }}</strong>
-  </p>
+  <p>Total Courses: {{ totalCourses() }}</p>
 
   <button
     type="button"
     (click)="addCourse()">
     Add Sample Course
   </button>
-
 </div>

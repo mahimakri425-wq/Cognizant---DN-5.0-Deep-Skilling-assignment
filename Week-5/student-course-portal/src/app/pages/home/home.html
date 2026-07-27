@@ -1,20 +1,12 @@
-<section class="home-page">
+<h1>{{ portalName }}</h1>
 
-  <h1>{{ portalName }}</h1>
+<div class="course-count-card">
+  <h2>{{ courseCount() }}</h2>
+  <p>Available Courses</p>
+</div>
 
-  <div class="stat-card">
-    <h2>{{ courseCount }}</h2>
-    <p>Available Courses</p>
-  </div>
+<app-course-summary-widget
+  (courseAdded)="loadCourseCount()">
+</app-course-summary-widget>
 
-  <app-course-summary-widget
-    (courseAdded)="updateCourseCount()">
-  </app-course-summary-widget>
-
-  <h2>Notification Instance 1</h2>
-  <app-notification></app-notification>
-
-  <h2>Notification Instance 2</h2>
-  <app-notification></app-notification>
-
-</section>
+<app-notification></app-notification>
