@@ -1,1 +1,1 @@
-<message>Updated from main branch</message>
+<messages><message source="main">Updated from main branch</message><message source="GitWork">Updated from GitWork branch</message></messages>
